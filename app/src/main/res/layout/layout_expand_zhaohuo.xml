@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="95dp"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@mipmap/xialacase">
+
+
+
+    <TextView
+        android:id="@+id/expand_zhaohuo_line1"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="写的采购单"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:singleLine="true"
+        android:gravity="center"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="5dp"
+        />
+
+
+    <TextView
+        android:id="@+id/expand_zhaohuo_line2"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="拍的采购单"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:singleLine="true"
+        android:gravity="center"
+        android:drawablePadding="10dp"
+        />
+
+
+
+
+</LinearLayout>

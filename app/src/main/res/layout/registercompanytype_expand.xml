@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+
+
+    <TextView
+        android:id="@+id/companytype_expand_line1"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="工厂"
+        android:textSize="14sp"
+        android:singleLine="true"
+        android:gravity="center"
+        android:drawablePadding="10dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/hui"/>
+
+    <TextView
+        android:id="@+id/companytype_expand_line2"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="现货商"
+        android:textSize="14sp"
+        android:singleLine="true"
+        android:gravity="center"
+        android:drawablePadding="10dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/hui"/>
+    <TextView
+        android:id="@+id/companytype_expand_line3"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="贸易商"
+        android:textSize="14sp"
+        android:singleLine="true"
+        android:gravity="center"
+        android:drawablePadding="10dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/hui"/>
+</LinearLayout>

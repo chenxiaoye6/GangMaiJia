@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/text_color"
+        android:paddingTop="20dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已完成订单"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_centerInParent="true"
+                />
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/white_bakc"
+                android:layout_centerVertical="true"
+                />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/ll_head_complete"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <RelativeLayout
+            android:id="@+id/ry_completed_type1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_completed_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="写的采购单"
+                android:textColor="@color/text_color"
+                android:layout_centerInParent="true"
+                />
+
+            <!--<ImageView-->
+            <!--android:id="@+id/iv_allorder_zhaohuo"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_toRightOf="@+id/tv_allorder_text1"-->
+            <!--android:src="@mipmap/xialajiao"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:padding="6dp"-->
+            <!--/>-->
+
+            <TextView
+                android:id="@+id/tv_completed_line1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/text_color"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ry_completed_type2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_completed_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="找加工"
+                android:layout_centerInParent="true"
+                />
+
+            <TextView
+                android:id="@+id/tv_completed_line2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ry_completed_type3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_completed_text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="找车源"
+                android:layout_centerInParent="true"
+                />
+
+            <TextView
+                android:id="@+id/tv_completed_line3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/completed_list2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ></com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/completed_list3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ></com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/completed_list4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"></com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/completed_list1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"></com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+    </RelativeLayout>
+
+
+    <!--<ListView-->
+        <!--android:id="@+id/lv_completedingdan"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"></ListView>-->
+
+</LinearLayout>

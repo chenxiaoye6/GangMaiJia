@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/province" android:state_activated="true"></item>
+    <item android:drawable="@color/noprovince" ></item>
+</selector>

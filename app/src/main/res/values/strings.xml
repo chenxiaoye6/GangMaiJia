@@ -1,0 +1,12 @@
+<resources
+    xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation"
+    >
+    <string name="app_name">钢买家</string>
+
+    <string-array name="picture_or_camera">
+        <item>图库</item>
+        <item>相机</item>
+    </string-array>
+    <string name="select_which_picture_title">选择图片来源</string>
+
+</resources>
